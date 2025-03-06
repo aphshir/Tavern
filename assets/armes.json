@@ -1,0 +1,15 @@
+{
+    "épée":{
+        "épee longe": "Fait 1d6(+force) de dégats peut taper d'une case de loin",
+        "épee de paladin": "Se soinge de 1d4 par attaque au corps à corps, si équipé sur un paladin, permet de séléctionner une capacité en plus",
+        "épee sanglate": "Quand l'ennemi est touché il recois un token de saignement, si équipé sur un guerrier permet de séléctionner une capacité en plus",
+        "épée de lumère": "Permet d'apposer une Bénédiction mineure: +1 à une caratéristique choisie par le joueur pendant 3 tours",
+        "épée d'os": "Epee qui peut se casser si 1d20(+dexterite) si le résultat est <= à 5. Prends 1 tour à se réparer, si l'épée se casse sur un ennmi il subit 3 token de saignment et reçois 1d6(+force) de dégats",
+    },
+    "fléeau":{
+        "fléeau de paladin": "Frape doublement les ennemis infligeant 1d4(+force) de dégats soigant 1d4 de PV par ennemi touché",
+        "fléeau de pics": "Inflige de dégats et 1d4 de token de saignement",
+        "Brise os": "Inflige 1d6(+force) de dégats et réduit la force de l'ennemi de 3 pendant 2 tours",
+        "fléeau des damnés": "si un aliée est mrot Inflige 1d6(+force) répète l'attaque par aliée mort. si l'attaque tue récusite un aliée à 10% de ses PV (une fois par combat)",
+    }
+}

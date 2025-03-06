@@ -1,0 +1,91 @@
+{
+    "Guerrier":{
+        "description":"Un Guerrier est un combattant qui se bat avec une épée, hache, lance ou katana",
+        "stats":{
+            "vie":70,
+            "mental":10,
+            "force":6,
+            "dexterite":3,
+            "intelligence":2,
+            "charisme":3
+        },
+        "armes":["épée","hache","lance","katana"],
+        "skills":{
+            "Frapper": "Frappe un ennemi infligant 1d6(+force) de dégats",
+            "Appui": "Augemente la résistance aux dégats de 1d4(+dexterite) pendant 2 tour",
+            "Coup de grâce": "5 mental: Frappe un ennemi infligant 1d6(+force) de dégats lance 1d20(+dexterite) si le résultat est >= à 13 inflige un coup critique",
+            "Fureur": "3 de mental: Augemente les dégats de 1d6 pendant 2 tours. Lance 1d20(+dexterite) si le résultat est >= à 10 ne passe pas le tour",
+            "Double coup": "4 de mental: infligant 2d6(+force) de dégats",
+            "Force intereure": "Si la vie est infereur à 20% de la vie max, inflgie 1d12(+force) de dégats (2 tours de recharge)",
+            "Rage dévorante": "4 de vie: Inflige 1d8(+force) de dégats",
+            "Regard noir": "fixe l'ennemi: toutes les attques venant de vous inflige 1d4(+charisme) de dégats en plus (un ennemi à la fois)",
+            "Coup violent": "3 de mental: étourdit l'ennemi pendant 1 tour et inflgie 1d4(+force) de dégats",
+            "Dernier souffle": "Passif: Si les PV tombes à 0 une fois par combat, les PV remontent à 50% de la vie, pert 20 pv max (pour le combat), regagne son mental, retitre tous les malus, gage un tour de plus, gagne un bonus dedégats de +3 pendant 3 tours",
+            "Casse genoux": "2 de mental: inflige 1d4(+force) de dégats et réduit la dexterité de l'ennemi de 3 pendant 2 tours",
+            "multicoup": "frape jusquà 3 ennemis en infligeant 1d4(+force) de dégats",
+            "Charge perçante ": "Charge sur l'ennemi infligeant 1d4(+force) de dégats et étourdit l'ennemi pendant 1 tour, inflige 1d4 de token de saignement"
+
+        }
+    },
+    "Druide":{
+        "description":"Un druide est un mage qui utilise la nature pour combattre",
+        "stats":{
+            "vie":40,
+            "mental":35,
+            "force":2,
+            "dexterite":3,
+            "intelligence":6,
+            "charisme":4
+        },
+        "armes":["Bâton de nature","Baguette en bois", "dague de racines"],
+        "skills":{
+            "Brise": "5 de mental: Soigne 1d6(+intelligence) de PV à vous ou un allié",
+            "Parterre de fleurs":"6 de mental: fait posser des fleurs magique dans un rayon de 3 cases autour de lui qui soigne les alliés de 1d4(+intelligence) de PV pendant 2 tours",
+            "Armure de bois": "4 de mental: Augemente la résistance aux dégats de 1d4(+intelligence) pendant 3 tours à vou ou à un allié",
+            "Racine": "3 de mental: Inflige 1d4(+intelligence) de dégats et Immobilise l'ennemi pendant 1 tour",
+            "Fouet liane": "3 de mental: inflige 1d6(+intelligence) de dégats",
+            "Mur de racine": "5 de mental : Crée un mur de racine de 3 cases de long et 1 de large qui bloque les attaques des deux cotés. le mur peut être annulé par le lanceur ou par un ennemi qui inflige 1d6(+intelligence) de dégats au mur au total", 
+            "Fleur de poison": "3 de mental: infige poison à l'ennemi infligeant 1d4(+intelligence) de dégats pendant 2 tours (3 tours de recharge)",
+            "Cocon": "Entre en état de stase, Ne peut attaquer, le cocon peut résister à 1d20+(intelligence) de dégats. Le cocon reste pendant 2 tours et soigne 2d6(+intelligence) de PV par tour et rends l'entertée du mental, retire tous les effet de status. (5 tours de recharge)",
+            "Plante carnovore": "3 de mental: Fait pousser une plante carnivore sur le sol, si l'ennemi marche dessus. Il se vera immobilisé, Incapacité, Réduit au silence, et inpossible à toucher. inflige 1d20(+intelligence) de dégats le premier tour. L'énnemi est capturé 3 tours",
+            "esprit de foret": "10 de mental: invoque un allié esprit de foret qui inflige, il a 2d4(2*intelligence) de PV. Il ne peut etre soigné. Il ne peut avoir qu'un esprit de la foret à la fois. Au début de son tour: il peut: Bulle forstière: soigne 1d6(+intelligence) de PV à tous les alliés, : Tempête de feuille: inflige 1d6(+intelligence) de dégats à tous les ennemis, ou piqure toxique : inflige 1d4 de dégats et poison pendant 2 tours à un ennei (5 tours de recharge). Il ne peut avoir qu'un esprit de la foret à la fois",
+            "Ronces": "3 de mental: Enronce un énnemi, réduit sa dexterite de 3 et inflige 1d4(+intelligence) de dégats si il attaque. dure 3 tours (3 tours de recharge)",
+            "Transformation": "10 de mental: Se transforme au choix en Ours: augmentant sa vie de +10, En singe: augemntant son intelligence de +3, En loup: augmentant sa dexterité de +3, Ou en chouette: le rendant insensible aux dégats au corps à corps. Dure 3 tours (5 tours de recharge)",
+            "Vent assendant": "3 de mental: Buff une caratéristique au choix de +1 pendant 5 tours d'un allié (5 tours de recharge ou aucun si annulé prématurément)",
+            "Tremblement": "4 de mental: Inflige 1d8(+intelligence) à tous les ennemis",
+            "Repos": "s'endort pendant 1 tour regange tout son mental.",
+            "rétablissement": "3 de mental: Soigne 1d4(+intelligence) de PV à un allié retire: poison, toutes les marques de saingement, et les madies mineurs. (2 tours de recharge)",
+        }
+    },
+    "Paladin":{
+        "description":"Un paladin est un combattant qui se bat pour la justice et la lumière",
+        "stats":{
+            "vie":60,
+            "mental":30,
+            "force":5,
+            "dexterite":1,
+            "intelligence":5,
+            "charisme":2
+        },
+        "armes":["épée","fléeau","lance"],
+        "skills":{
+            "Frapper": "Frappe un ennemi infligant 1d6(+force) de dégats",
+            "Protection lumineuse": "4 de mental: Réduit les dégats subis de 1d4(+intelligence) pendant 2 tours, se soigne de 20% des dégats suibit. dure 2 tours, 3 tours de recharge",
+            "Protéger les faibles": "3 de mental: augemente la résistance aux dégats de 1d4(+intelligence) Taunt. dure 3 tours, (4 tours de recharge)",
+            "Justice!": "5 de mental: Inflige 1d6(+force) de dégats. Si un membre de l'équipe et mort inflige 1d20(+force) de dégats à la place (2 tours de recharge)",
+            "Lumière divine": "4 de mental: Inflige 1d6(+intelligence) de dégats à tous les ennemis, soigne 1d4(+intelligence) de PV à tous les alliés (4 tours de recharge)",
+            "Bouclier de lumière": "7 de mental: Crée un Bouclier de lumière qui fait 3 cases de long. bloque touses les attaques énnemis. autorise les attaques aliés. dure 3 tours (6 tours de recharge)",
+            "Brulure de lumère": "3 de mental: Inflige 1d4(+intelligence) de dégats et brule l'ennemi infligeant 1d4(+intelligence) de dégats pendant 2 tours (3 tours de recharge)",
+            "Flash lumineux": "3 de mental: Aveugle les ennemis pendant 3 tours (3 tours de recharge)",
+            "Consécration": "4 de mental: Crée une zone de consécration de 3 cases de raduis qui inflige 1d4(+intelligence) de dégats à tous les ennemis qui rentre dedans, renforce tous les soins de 2 points (4 tours de recharge)",
+            "Dimention de lumère": "10 de mental: une fois par combat, ne fonctionne pas avec les boss et les ennemis très grand. Téléporte Vous et un ennemi dans une arène de lumère. Un Duel à mort commence. Chaque personne se voit fixer ses PV à 50, ses effet de status sont retirés,les capacités bloqués, seul une attaque faiasant 1d8(+force) de dégats est autorisé. Si un des énnemi l'effet bouclier divin il le conserve pendant le duel. Le combat se termine quand un des deux est mort. Le gagnant retourne au combat avec toute sa vie et son mental si il avait son bouclier divain: il le récupère si il réussie 1d4 >=1. (5 tours de recharge)",
+            "Bouclier divin": "6 de mental: Crée un bouclier divin qui absorbe tout les dégats pendant 1 tour. (4 tours de recharge)",
+            "Bénédiction de la lumière": "Béni un alié. La Bénédiction persiste jusqu'à la fin du combat ou jusq'au changement de cible. soigne 1d4 de pv tous les tous",
+            "soigner le mal": "3 de mental: Retire les malédictions, poisions, les maladies, et l'aveuglement. (3 tours de recharge)",
+            "Retrait pieux": "Se retir du combat pour 3 tours. récupère son mental, soinge 1d6(+intelligence), ne retire pas les effets de status. Ne peut pas rater. Revenir au combat de façon prématuré ne soigne pas et rends 25%|50%|75%| du mental (5 tours de recharge)",
+            "Bannisement": "5 de mental: Si un ennemi à invoqué des aliés avec de la maige. les détruits. soinge 1d4(+intelligence) de PV à tous les alliés par cible bannie. (4 tours de recharge)",
+            "Lumière éclatante": "3 de mental: Inflige 1d4(+intelligence) de dégats à tous les ennemis",
+            "Par la lumière": "3 de mental: Inflige 1d6(+force), récupère 1d4(+intelligence) de mental"
+        }
+    }
+}
