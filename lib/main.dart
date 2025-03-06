@@ -55,25 +55,59 @@ class _p1a extends State<p1>{
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         centerTitle: true,
-        title: SizedBox(width: 200, child:TextField(
-          decoration: InputDecoration(
-            hintText: "Search",
-            prefixIcon: Icon(Icons.search),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-          ),
-        )),
+        title: Text("Tavern tools"),
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-        
-            Text("wow"),
-            Text("j'ai fait ça tout seul")
+            Text("Outils pour le JDR lightweight Tavern"),
+            SizedBox(height: 20),
+            ElevatedButton(onPressed: ()=>{}, child: Text("Créer un personnage")),
           ],
         ),
       ),
     );
+  }
+}
+
+class chacreate extends StatefulWidget{
+  const chacreate({super.key});
+  
+  @override
+  State<chacreate> createState() => _chacreate();
+}
+class _chacreate extends State<chacreate>{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        centerTitle: true,
+        title: Text("Création de personnage"),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Text("Création de personnage"),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                Text("Nom: "),
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Nom",
+                  ),
+                ),
+                SizedBox(width: 20),
+                Text("Classe: "),
+                
+              ],
+            ),
+          ],
+        ),
+        ),
+      );
   }
 }

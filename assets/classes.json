@@ -37,7 +37,7 @@
             "intelligence":6,
             "charisme":4
         },
-        "armes":["Bâton de nature","Baguette en bois", "dague de racines"],
+        "armes":["Bâton de nature", "dague de racines"],
         "skills":{
             "Brise": "5 de mental: Soigne 1d6(+intelligence) de PV à vous ou un allié",
             "Parterre de fleurs":"6 de mental: fait posser des fleurs magique dans un rayon de 3 cases autour de lui qui soigne les alliés de 1d4(+intelligence) de PV pendant 2 tours",
@@ -54,7 +54,7 @@
             "Vent assendant": "3 de mental: Buff une caratéristique au choix de +1 pendant 5 tours d'un allié (5 tours de recharge ou aucun si annulé prématurément)",
             "Tremblement": "4 de mental: Inflige 1d8(+intelligence) à tous les ennemis",
             "Repos": "s'endort pendant 1 tour regange tout son mental.",
-            "rétablissement": "3 de mental: Soigne 1d4(+intelligence) de PV à un allié retire: poison, toutes les marques de saingement, et les madies mineurs. (2 tours de recharge)",
+            "rétablissement": "3 de mental: Soigne 1d4(+intelligence) de PV à un allié retire: poison, toutes les marques de saingement, et les madies mineurs. (2 tours de recharge)"
         }
     },
     "Paladin":{
