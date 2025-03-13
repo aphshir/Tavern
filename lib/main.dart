@@ -63,7 +63,9 @@ class _p1a extends State<p1>{
           children: [
             Text("Outils pour le JDR lightweight Tavern"),
             SizedBox(height: 20),
-            ElevatedButton(onPressed: ()=>{}, child: Text("Créer un personnage")),
+            ElevatedButton(onPressed: ()=>{
+              Navigator.push(context, MaterialPageRoute(builder: (context) => chacreate()))
+            }, child: Text("Créer un personnage")),
           ],
         ),
       ),
@@ -78,8 +80,22 @@ class chacreate extends StatefulWidget{
   State<chacreate> createState() => _chacreate();
 }
 class _chacreate extends State<chacreate>{
+  readclasses() async {
+    final String cla = await rootBundle.loadString('assets/classes.json');
+    final clar = await json.decode(cla);
+    return clar;
+  }
+  readarmes() async{
+
+    final String wpn = await rootBundle.loadString('assets/armes.json');
+    final wpnr= await json.decode(wpn);
+    return wpnr;
+  }
+  
   @override
   Widget build(BuildContext context){
+    final classes = readclasses();
+    final armes = readarmes();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -102,7 +118,7 @@ class _chacreate extends State<chacreate>{
                 ),
                 SizedBox(width: 20),
                 Text("Classe: "),
-                
+                DropdownMenu(dropdownMenuEntries: classes.keys.toList()),
               ],
             ),
           ],
